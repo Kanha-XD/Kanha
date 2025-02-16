@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-adsense-account" content="ca-pub-5048629477391888">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝖪𝖺𝗇𝗁𝖺-𝖷𝖣</title>
+    <meta property="og:title" content="𝖪𝖺𝗇𝗁𝖺-𝖷𝖣">
+    <meta property="og:locale" content="en_EU">
+    <meta property="og:description" content="𝖪𝖺𝗇𝗁𝖺-𝖷𝖣's main page">
+    <meta property="og:image" content="https://via.placeholder.com/150">
+    <link rel="shortcut icon" href="https://via.placeholder.com/16" type="image/png">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#a3129a">
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(135deg, #a3129a, #6a0d75, #310740);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .avatar {
+            width: 200px; /* Increased size */
+            height: 200px; /* Increased size */
+            border-radius: 50%;
+            margin: 40px 0 20px; /* Increased distance from top and decreased from bottom */
+            border: 3px solid white;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .linkMenu {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px; /* Decreased padding */
+            margin: 20px 0 40px; /* Decreased bottom margin */
+            width: 80%;
+            max-width: 300px; /* Decreased max-width */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: slideIn 2s forwards;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .linkMenu a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            margin: 10px 0; /* Increased space between links */
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 25px; /* Adjust border-radius for rounded corners */
+        }
+        .linkMenu a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .linkMenu span.mdi {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+        h2, h3 {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        h3 .typed-cursor {
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .avatar {
+                width: 150px; /* Adjusted size for smaller screens */
+                height: 150px; /* Adjusted size for smaller screens */
+            }
+            .linkMenu {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="avatar-container">
+            <img src="Kanha-XD.jpg" oncontextmenu="return false;" class="avatar">
+        </div>
+        <h2><span id="name">𝖪𝖺𝗇𝗁𝖺-𝖷𝖣</span></h2>
+        <hr width="295">
+        <h3><span id="typed"></span><span class="typed-cursor"></span></h3>
+    </div>
+    <div class="center linkMenu">
+        <h2>Links</h2>
+        <a href="https://t.me/i_love_krishna_ji" class="mx-2 social-icon" data-tooltip="Telegram">
+            <span class="mdi mdi-telegram"></span> Telegram
+        </a>
+        <a href="https://github.com/kanha-XD" class="mx-2 social-icon" data-tooltip="GitHub">
+            <span class="mdi mdi-github-circle"></span> GitHub
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        $(document).ready(function() {
+            $('h2, h3, .avatar, .linkMenu').css('animation-delay', '0.5s');
+        });
+        var typed = new Typed('#typed', {
+            strings: ["welcome", "hello there", "check out my projects", "let's connect"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+  </html>
